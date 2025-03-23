@@ -1,0 +1,248 @@
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #007bff;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container to center content */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* User List / Leaderboard */
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.user-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.user-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.user-item p {
+  color: #666;
+}
+
+.user-item .points {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Activity Feed */
+.activity-feed {
+  margin-bottom: 40px;
+}
+
+.activity-feed h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.activity-feed ul {
+  padding: 0;
+}
+
+.activity-feed ul li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-feed ul li span {
+  font-size: 14px;
+  color: #555;
+}
+
+.activity-feed ul li strong {
+  font-size: 16px;
+}
+
+/* Rewards List / Cards */
+.rewards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.reward-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.reward-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.reward-card p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.reward-card .points {
+  font-size: 22px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.reward-card button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reward-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.admin-dashboard .admin-section {
+  margin-bottom: 30px;
+}
+
+.admin-dashboard .admin-section h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Loading and Error States */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .user-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .reward-card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .activity-feed ul li {
+    flex-direction: column;
+    align-items: center;
+  }
+}
